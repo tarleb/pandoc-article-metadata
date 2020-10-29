@@ -26,7 +26,7 @@ source-repository head
   location:            https://github.com/tarleb/pandoc-article-metadata.git
 
 common common-options
-  build-depends:       base            >= 4.9.1.0 && < 4.14
+  build-depends:       base            >= 4.9.1.0 && < 5
                      , pandoc-types    >= 1.17    && < 2
                      , text
   
