@@ -27,7 +27,7 @@ data BaseInfo = BaseInfo
   , keywords    :: [Text]
   , subtitle    :: [Inline]
   , title       :: [Inline]
-}
+  }
 
 -- | Name of an institution with which an author is affiliated.
 type InstituteName = [Inline]
@@ -51,6 +51,6 @@ data AuthorDetails = AuthorDetails
   , givenNames :: Text
   , email :: Maybe Text
   , orcid :: Maybe Text
-  , corId :: Int -- ^ corresponding author ID
-  , affId :: Int -- ^ author affiliation ID
+  , corId :: Maybe Int   -- ^ corresponding author ID
+  , affId :: [Int]       -- ^ author affiliation ID
   }
