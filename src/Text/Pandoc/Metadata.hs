@@ -7,15 +7,23 @@ Metadata definitions for scholarly articles.
 -}
 
 module Text.Pandoc.Metadata
-  ( BaseInfo (..)
-  , Date (..)
+  ( DocumentInfo (..)
   , AuthorDetails (..)
   , AuthorInfo (..)
+  , Date (..)
+  , Journal (..)
   )
 where
 
 import Data.Text (Text)
 import Text.Pandoc.Definition (Block, Inline)
+import Text.Pandoc.Metadata.Journal (Journal (..))
+
+-- | Scholarly article metadata.
+data ScholarlyArticle = ScholarlyArticle
+  { baseInfo    :: BaseInfo
+  , journal     :: JournalInfo
+  }
 
 -- | Core metadata information on a scholarly article.
 data BaseInfo = BaseInfo
