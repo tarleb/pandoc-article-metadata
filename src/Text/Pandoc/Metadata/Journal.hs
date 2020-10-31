@@ -5,13 +5,13 @@ Maintainer: Albert Krewinkel <albert@zeitkraut.de>
 
 Metadata definitions for (scholarly) journals.
 -}
-module Text.Pandoc.Metadata
+module Text.Pandoc.Metadata.Journal
   ( Journal (..)
   )
   where
 
 import Data.Text (Text)
-import Text.Pandoc.Definition (Block, Inline)
+import Text.Pandoc.Definition (Inline)
 
 -- | Journal info
 data Journal = Journal
