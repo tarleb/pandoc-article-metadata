@@ -51,6 +51,7 @@ library
   import:              common-options
   hs-source-dirs:      src
   exposed-modules:     Text.Pandoc.Metadata
+                     , Text.Pandoc.Metadata.Article
                      , Text.Pandoc.Metadata.Journal
 
 test-suite pandoc-article-metadata-test

@@ -13,17 +13,26 @@ module Text.Pandoc.Metadata
   , BaseInfo (..)
   , Date (..)
   , Journal (..)
+  , Article (..)
+  , AuthorNotes (..)
+  , CorrespondenceInfo (..)
   )
 where
 
 import Data.Text (Text)
 import Text.Pandoc.Definition (Block, Inline)
+import Text.Pandoc.Metadata.Article
+  ( Article (..)
+  , AuthorNotes (..)
+  , CorrespondenceInfo (..)
+  )
 import Text.Pandoc.Metadata.Journal (Journal (..))
 
 -- | Scholarly article metadata.
 data ScholarlyArticle = ScholarlyArticle
   { baseInfo    :: BaseInfo
   , journal     :: Journal
+  , article     :: Article
   }
 
 -- | Core metadata information on a scholarly article.
